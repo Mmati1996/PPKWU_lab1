@@ -1,9 +1,9 @@
 package com.example.ppkwu1;
 
-public class Reverser {
+public class Reverse {
     private final String text;
 
-    public Reverser(String text){
+    public Reverse(String text){
         this.text = text;
     }
 
