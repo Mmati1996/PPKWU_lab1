@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ReverseController {
 
+
+    // == http://localhost:8080/reverse?text=toReverse ==
     @GetMapping("/reverse")
-    public Reverse reverse(@RequestParam String text){
-        return new Reverse(text);
+    public String reverse(@RequestParam String text){
+        Reverse reverse = new Reverse(text);
+        return reverse.getText();
     }
 }
